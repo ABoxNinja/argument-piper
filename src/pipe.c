@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "tools/check.h"
 
 int main(int argc, char *argv[])
 {
@@ -28,7 +29,23 @@ int main(int argc, char *argv[])
             if (status == 0)
             {
                 printf("\n%s -> \e[0;32m[OK]\e[0m\n",argv[1]);
-                printf("\e[0;30m\tinput: %d\e[0m",input);
+                printf("\e[0;30m\tinput: %d\e[0m\n",input);
+                if (IS_INTEGER(input))
+                {
+                    printf("\e[0;30m\tinput type: integer\e[0m");
+                }
+                else if (IS_CHAR(input))
+                {
+                    printf("\e[0;30m\tinput type: string/character\e[0m");
+                }
+                else if (IS_FLOAT(input))
+                {
+                    printf("\e[0;30m\tinput type: float\e[0m");
+                }
+                else
+                {
+                    printf("\e[0;30m\tinput type: could not get input type\e[0m");
+                }
             }
             else
             {
