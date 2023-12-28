@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tools/check.h"
+#include "tools/random.h"
 
 int input;
 
@@ -35,8 +36,8 @@ int main(int argc, char *argv[])
     {
         if (argv[1])
         {
-            input = 123;
             int status;
+            input = random(1,100,5);
 
             FILE *pipe = popen(argv[1],"w");
             if (!pipe)
