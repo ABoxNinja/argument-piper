@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
             else
             {
                 //ERROR
-                printf("\n%s -> \e[0;31m[ERROR]\e[0m\n",argv[1]);
+                printf("\n%s -> \e[0;31m[FAILED]\e[0m\n",argv[1]);
                 printf("\e[0;30m\tinput: %d\e[0m\n",input);
                 fetch_ity();
             }
