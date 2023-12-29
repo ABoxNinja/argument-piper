@@ -1,7 +1,7 @@
-﻿# unitt
-Unitt is a tiny piper that mostly works with user input, randomly generated, or set by the programmer in the CLI.
+﻿# x63
+x63 is a tiny piper that mostly works with user input, randomly generated, or set by the programmer in the CLI.
 
-Unitt randomizes inputs for your program without the need of spending time testing all the edge cases by hand.
+x63 randomizes inputs for your program without the need of spending time testing all the edge cases by hand.
 
 ### Usage:
 
